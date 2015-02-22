@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>YouTube API Demo</title>
+  <style type="text/css">
+    html, body {
+      background: url('symphony.png') repeat;
+      margin: 0;
+      padding: 20px 0;
+    }
+
+    #container {
+      width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #the-button {
+      padding: 10px 20px;
+      border: 1px solid rgba(44, 44, 44, 0.5);
+      border-radius: 5px;
+      background: #a6f5e3;
+      box-shadow: inset 0 -1px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      font: 14px/20px Helvetica, sans-serif;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
+    #the-button:hover {
+      box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    #the-button:active {
+      transform: translateY(2px);
+      outline: 0;
+    }
+
+    #the-button:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    #the-movie {
+      display: block;
+      width: 640px;
+      height: 360px;
+      margin: 40px auto;
+      border: 2px solid #444;
+      background: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+<main role="main" id="container">
+  <button type="button" id="the-button">Load the movie</button>
+
+  <div id="the-movie"></div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
